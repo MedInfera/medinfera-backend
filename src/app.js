@@ -34,6 +34,8 @@ app.use('/api/hospitals', require('./modules/hospitals/routes'));
 app.use('/api/doctors', require('./modules/doctors/routes'));
 app.use('/api/patients', require('./modules/patients/routes'));
 app.use('/api/appointments', require('./modules/appointments/routes'));
+app.use('/api/medicines', require('./modules/medicines/routes'));
+app.use('/api/prescriptions', require('./modules/prescriptions/routes'));
 
 // 404 for unknown routes
 app.use((req, res) => {
