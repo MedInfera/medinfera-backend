@@ -205,7 +205,7 @@ Platform fee:   10%
 ```javascript
 import { io } from 'socket.io-client';
 
-const socket = io('https://medinfera-backend.up.railway.app');
+const socket = io('https://medinfera-backend.onrender.com');
 
 // Join your hospital room
 socket.emit('join:hospital', hospitalId);
@@ -260,7 +260,7 @@ DATABASE_URL=postgresql://user:pass@host/dbname?sslmode=require
 # JWT
 JWT_SECRET=your_secret_here
 JWT_REFRESH_SECRET=your_refresh_secret_here
-JWT_EXPIRES_IN=7d
+JWT_EXPIRES_IN=15m
 JWT_REFRESH_EXPIRES_IN=7d
 
 # Razorpay
@@ -295,11 +295,15 @@ npm run dev
 
 ---
 
-## 🚢 Deployment (Railway)
+## 🚢 Deployment (Render)
 
-1. Connect GitHub repo to Railway
-2. Set environment variables in Railway dashboard
-3. Railway auto-deploys on every push to `main`
+1. Connect GitHub repo to Render
+2. Set environment variables in Render dashboard
+3. Build command: `npm install`
+4. Start command: `node server.js`
+5. Render auto-deploys on every push to `main`
+
+**Live URL**: https://medinfera-backend.onrender.com
 
 ---
 
@@ -337,7 +341,7 @@ medinfera-backend/
 │   └── app.js             # Express app setup
 ├── server.js              # Entry point
 ├── .env.example           # Environment template
-└── railway.toml           # Railway deployment config
+└── render.yaml            # Render deployment config
 ```
 
 ---
