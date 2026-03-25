@@ -9,7 +9,6 @@ build/
 .DS_Store
 coverage/
 .nyc_output/
-prisma/migrations/
 *.pem
 me.bat
 pri.bat
