@@ -9,7 +9,7 @@ A scalable, production-ready Hospital Management SaaS backend built with **Node.
 | Name | Role | Responsibilities |
 |------|------|-----------------|
 | **Aditya Singh** | Backend Lead | System architecture, Express app setup, server configuration, JWT authentication, middleware (auth, RBAC, validation, error handling), hospital & doctor modules, deployment on Render, API testing with Postman |
-| **Priyanshi Mishra** | Backend Developer | Prisma schema design, database configuration, ambulance, beds, IPD, lab, medicines, prescriptions, invoices, payouts, notifications modules, API testing with Postman |
+| **Priyanshi Mishra** | Backend Developer | Prisma schema, database configuration, ambulance, beds, IPD, lab, medicines, prescriptions, invoices, payouts, notifications modules, API testing with Postman |
 
 ---
 
